@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>World's Most Populous Cities</title>
+
+<!-- b. -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="alteredStyle.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["Tokyo|Drift", "Dehli", "Shanghai", "Mexico City", "Sao Paulo", "Mumbai", "Osaka", "Beijing", "New York City", "Cairo", "Dhaka", "Karachi", "Buenos Aires", "Calcutta", "Istanbul"];
+
+// d.
+var time_limit = 180; // in seconds
+</script>
+
+
+<!-- e. -->
+<script src="sporclone.js"></script>
+
+</head>
+
+
+<!-- f. -->
+<body onload="setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+    
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- g. -->
+            <li><a href="nick_cage.html">Nick Cage Movies</a></li>
+            <li><a href="sweet16.html">Name the 16 Sweet Sixteen</a></li>
+            </ul>
+        </aside>
+        
+        <!-- h. -->
+        <img class="icon" src="images/icon.jpg" alt="quiz logo">
+
+        <!-- i. -->
+        <h2>Name the 15 Most Populous Cities in the World</h2>
+
+    </section>
+
+    <section>
+        
+        <div class="column">
+            <!-- j. -->
+            <input id="start" type="button" value="PLAY GAME" onclick="start()">
+        </div>
+
+        <div class="column">
+            <!-- k. -->
+            <h3>Enter city name:</h3>
+
+            <!-- l.  -->
+            <input id="guess" type="text" onkeyup="check()">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+        
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section> 
+    
+    <section>
+
+        <!-- m. -->
+        <table>
+        <tr>
+        <td>1. <span id="answer0"></span></td>
+        <td>2. <span id="answer1"></span></td>
+        </tr>
+        <tr>
+        <td>3. <span id="answer2"></span></td>
+        <td>4. <span id="answer3"></span></td>
+        </tr>
+        <tr>
+        <td>5. <span id="answer4"></span></td>
+        <td>6. <span id="answer5"></span></td>
+        </tr>
+        <tr>
+        <td>7. <span id="answer6"></span></td>
+        <td>8. <span id="answer7"></span></td>
+        </tr>
+        <tr>
+        <td>9. <span id="answer8"></span></td>
+        <td>10. <span id="answer9"></span></td>
+        </tr>
+        <tr>
+        <td>11. <span id="answer10"></span></td>
+        <td>12. <span id="answer11"></span></td>
+        </tr>
+        <tr>
+        <td>13. <span id="answer12"></span></td>
+        <td>14. <span id="answer13"></span></td>
+        </tr>
+        <tr>
+        <td>15. <span id="answer14"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- n. -->
+        <p>Quiz by Erik W.</p>
+        
+        <p>Source: <a href="http://www.infoplease.com/ipa/A0762524.html">InfoPlease</a></p>
+
+    </footer>
+
+</div>
+
+</body>
+</html>

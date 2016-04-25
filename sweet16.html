@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<!--
+
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+
+-->
+
+<html>
+<head>
+<!-- a. -->
+<title>The Sweet 16</title>
+
+<!-- b. -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="alteredStyle.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+
+// c.
+var answers = ["North Carolina|UNC|Tar Heels", "Kansas|Jayhawks", "Virginia|Cavaliers", "Villanova|Wildcats", "Oregon|Ducks", "Oklahoma|Sooners", "Indiana|Hosiers", "Gonzaga|Bulldogs", "Iowa State|Cyclones", "Syracuse|Orange", "Texas A&M|Aggies", "Miami|Hurricanes", "Duke|Blue Devils", "Wisconsin|Badgers", "Maryland|Terrapins","Notre Dame|Fighting Irish"];
+
+// d.
+var time_limit = 180; // in seconds
+</script>
+
+
+<!-- e. -->
+<script src="sporclone.js"></script>
+
+</head>
+
+
+<!-- f. -->
+<body onload="setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+    
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- g. -->
+            <li><a href="top_cities.html">Name the World's Largest Cities</a></li>
+            <li><a href="nick_cage.html">Nick Cage Movies</a></li>
+            </ul>
+        </aside>
+        
+        <!-- h. -->
+        <img class="icon" src="images/basketballicon.jpg" alt="quiz logo">
+
+        <!-- i. -->
+        <h2>Name the 16 Teams Who Made the 2016 Sweet Sixteen</h2>
+
+    </section>
+
+    <section>
+        
+        <div class="column">
+            <!-- j. -->
+            <input id="start" type="button" value="PLAY GAME" onclick="start()">
+        </div>
+
+        <div class="column">
+            <!-- k. -->
+            <h3>Enter team name:</h3>
+
+            <!-- l.  -->
+            <input id="guess" type="text" onkeyup="check()">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+        
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section> 
+    
+    <section>
+
+        <!-- m. -->
+        <table>
+        <tr>
+        <td><img class="game" src="images/teams/unc-logo.gif" alt="quiz logo"><br><span id="answer0"></span></td>
+        <td><img class="game" src="images/teams/kansas-logo.png" alt="quiz logo"><br><span id="answer1"></span></td>
+        <td><img class="game" src="images/teams/virginia-logo.png" alt="quiz logo"><br><span id="answer2"></span></td>
+        <td><img class="game" src="images/teams/villanova-logo.png" alt="quiz logo"><br><span id="answer3"></span></td>
+        </tr>
+        <tr>
+        <td><img class="game" src="images/teams/oregon-logo.jpg" alt="quiz logo"><br><span id="answer4"></span></td>
+        <td><img class="game" src="images/teams/oklahoma-logo.png" alt="quiz logo"><br><span id="answer5"></span></td>
+        <td><img class="game" src="images/teams/indiana-logo.png" alt="quiz logo"><br><span id="answer6"></span></td>
+        <td><img class="game" src="images/teams/gonzaga-logo.jpg" alt="quiz logo"><br><span id="answer7"></span></td>
+        </tr>
+        <tr>
+        <td><img class="game" src="images/teams/iowa-state-logo.jpg" alt="quiz logo"><br><span id="answer8"></span></td>
+        <td><img class="game" src="images/teams/syracuse-logo.png" alt="quiz logo"><br><span id="answer9"></span></td>
+        <td><img class="game" src="images/teams/texasa&m-logo.png" alt="quiz logo"><br><span id="answer10"></span></td>
+        <td><img class="game" src="images/teams/miami-logo.png" alt="quiz logo"><br><span id="answer11"></span></td>
+        </tr>
+        <tr>
+        <td><img class="game" src="images/teams/duke-logo.jpg" alt="quiz logo"><br><span id="answer12"></span></td>
+        <td><img class="game" src="images/teams/wisconsin-logo.png" alt="quiz logo"><br><span id="answer13"></span></td>
+        <td><img class="game" src="images/teams/maryland-logo.png" alt="quiz logo"><br><span id="answer14"></span></td>
+        <td><img class="game" src="images/teams/notredame-logo.png" alt="quiz logo"><br><span id="answer15"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- n. -->
+        <p>Quiz by Erik W.</p>
+        
+        <p>Source: <a href="http://www.si.com/college-basketball/2016/03/23/ncaa-tournament-march-madness-sweet-16-power-rankings">SI.com</a></p>
+
+    </footer>
+
+</div>
+
+</body>
+</html>
